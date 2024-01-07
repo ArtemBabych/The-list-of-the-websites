@@ -36,15 +36,26 @@ li {
     font-size: 1em;
     font-weight: 700;
 }
+
 ul>li {
     margin-left: 3%;
     list-style-position: inside;
     list-style-type: disclosure-closed;
 }
+
+a {
+    text-decoration: underline;
+    color: #262732;
+}
+
+a:hover {
+    color: #fdeb37;
+}
 aside p {
     text-align: center;
     font-size: 0.9em;
 }
+
 .margin-bottom {
     margin-bottom: 5%;
 }
@@ -66,10 +77,6 @@ aside p {
 }
 
 
-@media only screen and (max-width: 700px) {
-    
-}
+@media only screen and (max-width: 700px) {}
 
-@media only screen and (max-width: 425px) {
-    
-}
+@media only screen and (max-width: 425px) {}
