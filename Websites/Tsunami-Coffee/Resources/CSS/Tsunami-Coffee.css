@@ -108,7 +108,7 @@ footer .container {
 
 .backbutton {
         width: 10rem;
-        font-size: 120%;
+        font-size: 1em;
         border: 1px solid black;
         border-radius: 15px;
         background-color: #262732;
