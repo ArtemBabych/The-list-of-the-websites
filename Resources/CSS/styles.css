@@ -51,6 +51,10 @@ a:hover {
     color: #fdeb37;
 }
 
+a:visited {
+    color: darkolivegreen;
+}
+
 aside p {
     text-align: center;
     font-size: 0.9em;
