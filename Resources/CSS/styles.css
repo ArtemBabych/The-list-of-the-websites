@@ -67,7 +67,7 @@ aside p {
 .list {
     display: grid;
     padding: 6%;
-    margin: 5% auto 0;
+    margin: 10% auto 0;
     border: 0.25rem solid #fdeb37;
     border-radius: 36px;
     background-color: #bdac9c;
@@ -75,43 +75,6 @@ aside p {
     width: 55%;
     justify-content: center;
 }
-
-/*
-@media only screen and (max-width: 700px) {
-    h1 {
-        font-size: 4rem;
-    }
-    
-    h2 {
-        font-size: 2em;
-    }
-    
-    h3 {
-        font-size: 1em;
-    }
-
-    aside p {
-        font-size: 0.6em;
-    }
-}
-
-@media only screen and (max-width: 425px) {
-    h1 {
-        font-size: 3.5rem;
-    }
-    
-    h2 {
-        font-size: 1.5em;
-    }
-    
-    h3 {
-        font-size: 0.8em;
-    }
-    aside p {
-        font-size: 0.5em;
-    }
-}
-*/
 
 @media only screen and (max-width: 700px) {
     html {
