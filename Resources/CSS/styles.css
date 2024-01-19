@@ -32,7 +32,7 @@ h3 {
 }
 
 li {
-    font-size: 1em;
+    font-size: 1.05em;
     font-weight: 700;
 }
 
@@ -67,8 +67,8 @@ aside p {
 .list {
     display: grid;
     padding: 6%;
-    margin: 100px auto 0;
-    border: 4px solid #fdeb37;
+    margin: 5% auto 0;
+    border: 0.25rem solid #fdeb37;
     border-radius: 36px;
     background-color: #bdac9c;
     color: #262732;
@@ -76,7 +76,7 @@ aside p {
     justify-content: center;
 }
 
-
+/*
 @media only screen and (max-width: 700px) {
     h1 {
         font-size: 4rem;
@@ -89,6 +89,7 @@ aside p {
     h3 {
         font-size: 1em;
     }
+
     aside p {
         font-size: 0.6em;
     }
@@ -108,5 +109,18 @@ aside p {
     }
     aside p {
         font-size: 0.5em;
+    }
+}
+*/
+
+@media only screen and (max-width: 700px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    html {
+        font-size: 10px;
     }
 }
