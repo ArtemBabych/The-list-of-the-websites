@@ -5,6 +5,14 @@ html {
     background-color: #1c1e26;
 }
 
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    margin-top: auto;
+}
 main {
     display: grid;
     margin-bottom: 1.5em;
