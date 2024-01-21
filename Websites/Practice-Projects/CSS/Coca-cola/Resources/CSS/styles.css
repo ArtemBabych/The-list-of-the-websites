@@ -62,16 +62,7 @@ div.enter a:hover {
 
 /* Main */
 
-.banner {
-    background-image: url(../Images/taste.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 1% 50% 15% 2%;
-    display: grid;
-    color: white;
-    height: 100%;
-    padding-top: 7%;
-}
+
 
 .banner div {
     background-color: #0000007d;
