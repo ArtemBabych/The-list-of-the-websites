@@ -1,0 +1,177 @@
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: #cf0c00;
+    justify-content: space-around;
+    font-size: 1.25rem;
+    border-bottom: 2px solid black;
+}
+
+nav {
+    width: 63%;
+}
+
+nav ul {
+    display: flex;
+    padding: 1rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 9%;
+    font-size: 1.3rem;
+}
+
+header a {
+    color: black;
+}
+
+nav a:hover {
+    cursor: pointer;
+    color: #fefcfd;
+    text-decoration: underline;
+    text-decoration-color: #fefcfd;
+    text-decoration-thickness: 1px;
+}
+
+div.logo {
+    position: relative;
+    width: 10vh;
+    height: 10vh;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0.4%;
+}
+
+div.logo img {
+    width: auto;
+    height: 100%;
+}
+
+div.enter {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 0 1%;
+    font-weight: 600;
+}
+
+div.enter a:hover {
+    cursor: pointer;
+    color: #fefcfd;
+}
+
+/* Main */
+
+.banner {
+    background-image: url(../Images/taste.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1% 50% 15% 2%;
+    display: grid;
+    color: white;
+    height: 100%;
+    padding-top: 7%;
+}
+
+.banner div {
+    background-color: #0000007d;
+    width: 27rem;
+    font-size: 1.1rem;
+    border-radius: 1%;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    padding: 4%;
+}
+
+h1 {
+    font-size: 4rem;
+    padding: 2%;
+}
+
+
+/* Fonts */
+
+main {
+    font-family: "Lato", sans-serif;
+}
+
+.pacifico {
+    font-family: 'Pacifico', cursive;
+}
+
+.lato {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Icons */
+
+.material-symbols-outlined {
+    display: none;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 875px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3%;
+    }
+
+    div.enter {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3%;
+    }
+
+    div.enter {
+        display: none;
+    }
+
+    div.material-symbols-outlined {
+        display: block;
+        font-size: 2rem;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3%;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .banner p {
+        font-size: 1rem;
+    }
+
+    .banner div {
+        background-color: #0000007d;
+        width: 16rem;
+        font-size: 1.1rem;
+        border-radius: 1%;
+    }
+}
+
+    @media only screen and (max-width: 450px) {
+        .banner {
+            background-position: center;
+        
+    }
+}
