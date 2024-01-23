@@ -1,0 +1,268 @@
+body {
+    background-image: url(../Images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: green;
+}
+
+/* Header */
+
+
+header {
+    background-color: #081c0a;
+    color: whitesmoke;
+}
+
+header a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 0.7rem;
+}
+
+nav {
+    font-size: 1.4rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav a:hover {
+    cursor: pointer;
+    background-color: #1f281b;
+    border-radius: 1rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+img {
+    max-width: 100%;
+    height: 5rem;
+    display: block;
+    min-height: 3rem;
+
+}
+
+
+div.logo {
+    height: 7rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.revert {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+/* Main */
+
+h2 {
+    font-size: 2.5rem;
+    padding: 5%;
+    text-align: center;
+}
+
+h3 {
+    padding: 3%;
+    font-size: 2rem;
+}
+
+main {
+    background-image: url(../Images/welcome.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: whitesmoke;
+    margin: 15rem 5rem;
+    padding: 5rem;
+    border: 3px solid darkolivegreen;
+    border-radius: 1rem;
+    line-height: 1.4;
+    font-size: 1.1rem;
+    font-family: 'Amita', serif;
+}
+
+.background {
+    background: #0e15055c;
+    padding: 3%;
+    border-radius: 1rem;
+}
+
+/* Footer */
+Footer {
+    background-color: #713c1c;
+    height: 3rem;
+}
+
+.back {
+    order: 3;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: center;
+    align-content: space-between;
+    justify-content: center;
+    padding: 0 3%;
+    gap: 10%;
+}
+
+
+/* Icons */
+
+div.icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 8rem;
+    order: 2;
+    margin-left: 5%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.material-symbols-outlined {
+    display: none;
+}
+
+/* Fonts */
+
+.amita {
+    font-family: 'Amita', serif;
+}
+
+.berkshire {
+    font-family: 'Berkshire Swash', serif;
+}
+
+.croissantone {
+    font-family: 'Croissant One', serif;
+}
+
+
+/* Media queries */
+
+@media only screen and (max-width: 875px) {
+    
+    footer {
+        height: max-content;
+        padding: 1%;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100%;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        padding: 0 3%;
+        gap: 13.5%;
+    
+}
+}
+
+@media only screen and (max-width: 700px) {
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+        padding: 4%;
+        text-align: center;
+    }
+
+    h3 {
+        padding: 2.5%;
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    main {
+        margin: 9rem 3rem;
+        padding: 0.5rem;
+        line-height: 1.5;
+    }
+    
+    nav li {
+        font-size: 1.3rem;
+    }
+
+    li {
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 620px) {
+    div.icons {
+        padding: 1% 0 0 0;
+        }
+        .back {
+            padding: 1% 0 0 0;
+        }
+}
+
+@media only screen and (max-width: 450px) {
+    div.copyright {
+    text-align: center;
+} 
+}
+@media only screen and (max-width: 400px) {
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        padding: 4%;
+        text-align: center;
+    }
+
+    h3 {
+        padding: 2.5%;
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    nav li {
+        font-size: 1.1rem;
+    }
+
+    li {
+        font-size: 0.8rem;
+    }
+
+    main {
+        margin: 7rem 3rem;
+        padding: 0.5rem;
+}
+}
