@@ -26,6 +26,11 @@ header a {
     color: black;
 }
 
+.fixed {
+    position: fixed;
+    width: 100%;
+}
+
 nav a:hover {
     cursor: pointer;
     color: #fefcfd;
