@@ -53,6 +53,47 @@ img {
 
 }
 
+.container {
+    width: fit-content;
+    height: auto;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.container img {
+    max-width: 100%;
+    height: 360px;
+    display: block;
+    width: 246px;
+}
+
+.container2 {
+    width: fit-content;
+    height: auto;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.container2 img {
+    max-width: 100%;
+    height: 200px;
+    display: block;
+    width: 300px;
+}
+
+div.photos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid whitesmoke;
+    background-color: #f5f5f563;
+    align-content: center;
+    gap: 1rem;
+    padding: 3%;
+    margin: 2% 0;
+}
 
 div.logo {
     height: 7rem;
@@ -103,6 +144,13 @@ main {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.gallery {
+    background-color: #081c0a91;
+    background-image: none;
+    text-align: center;
+}
+
 .background {
     background: #0e15055c;
     padding: 3%;
