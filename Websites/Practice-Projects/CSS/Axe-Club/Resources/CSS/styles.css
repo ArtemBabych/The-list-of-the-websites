@@ -97,6 +97,12 @@ main {
     font-family: 'Amita', serif;
 }
 
+.throwing-axe {
+    background-image: url(../Images/throwing-axe.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .background {
     background: #0e15055c;
     padding: 3%;
