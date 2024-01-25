@@ -54,6 +54,7 @@ img {
 }
 
 .container {
+    border-radius: 1rem;
     width: fit-content;
     height: auto;
     overflow: hidden;
@@ -68,6 +69,7 @@ img {
 }
 
 .container2 {
+    border-radius: 1rem;
     width: fit-content;
     height: auto;
     overflow: hidden;
@@ -93,6 +95,7 @@ div.photos {
     gap: 1rem;
     padding: 3%;
     margin: 2% 0;
+    border-radius: 1rem;
 }
 
 div.logo {
@@ -157,6 +160,16 @@ main {
     border-radius: 1rem;
 }
 
+.contact-info {
+    background-color: #081c0a91;
+    background-image: none;
+    padding: 3%;
+    border-radius: 1rem;
+}
+
+.contact-info p {
+    padding: 0.4rem;
+}
 /* Footer */
 Footer {
     background-color: #713c1c;
@@ -179,7 +192,100 @@ aside {
     gap: 10%;
 }
 
+div.workers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
 
+.worker-card {
+    min-height: 300px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.worker-card h3 {
+    text-align: center;
+}
+
+.worker-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.button {
+    display: block;
+    margin: 3% auto 0;
+    width: fit-content;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: whitesmoke;
+    padding: 0.5rem 1rem;
+    border-radius: 5rem;
+}
+
+.button a {
+    color: #081c0a;
+}
+
+.button:hover {
+    background-color: #1f281b;
+}
+
+.button a:hover {
+    color: whitesmoke;
+}
+
+.marks {
+    list-style: circle;
+    padding: 7%;
+}
+
+.product {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+.picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+.picture img {
+    height: auto;
+    max-width: 100%;
+    border-radius: 2rem;
+}
+
+.tools {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 5rem;
+}
+
+.contact-us {
+    background-image: url(../Images/contact-us.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
 /* Icons */
 
 div.icons {
@@ -216,7 +322,7 @@ div.icons {
 /* Media queries */
 
 @media only screen and (max-width: 875px) {
-    
+
     footer {
         height: max-content;
         padding: 1%;
@@ -232,8 +338,8 @@ div.icons {
         justify-content: center;
         padding: 0 3%;
         gap: 13.5%;
-    
-}
+
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -262,7 +368,7 @@ div.icons {
         padding: 0.5rem;
         line-height: 1.5;
     }
-    
+
     nav li {
         font-size: 1.3rem;
     }
@@ -276,17 +382,34 @@ div.icons {
 @media only screen and (max-width: 620px) {
     div.icons {
         padding: 1% 0 0 0;
-        }
-        .back {
-            padding: 1% 0 0 0;
-        }
+    }
+
+    .back {
+        padding: 1% 0 0 0;
+    }
+
+    .button {
+        font-size: 1.25rem;
+    }
+
+    .product {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr ;
+        align-items: center;
+        gap: 1rem;
+    }
+    .contact-info p {
+        padding: 0.2rem;
+    }
 }
 
 @media only screen and (max-width: 450px) {
     div.copyright {
-    text-align: center;
-} 
+        text-align: center;
+    }
 }
+
 @media only screen and (max-width: 400px) {
 
     h1 {
@@ -319,5 +442,5 @@ div.icons {
     main {
         margin: 7rem 3rem;
         padding: 0.5rem;
-}
+    }
 }
