@@ -1,15 +1,15 @@
 console.log('Hey!');
-console.log('Let\'s play Rock, Paper, or Scissors game. It\'s so funny!');
+console.log('Let\'s play rock, paper, or scissors game. It\'s so funny!');
 console.log('\n');
 console.log(`Here's how it works:
 
-Rock crushes Scissors: If you choose Rock and your opponent chooses Scissors, you win!
+rock crushes scissors: If you choose rock and your opponent chooses scissors, you win!
 
-Scissors cuts Paper: If you choose Scissors and your opponent chooses Paper, you win!
+scissors cuts paper: If you choose scissors and your opponent chooses paper, you win!
 
-Paper covers Rock: If you choose Paper and your opponent chooses Rock, you win!
+paper covers rock: If you choose paper and your opponent chooses rock, you win!
 
-To play, simply type your choice - Rock, Paper, or Scissors. After that, computer will reveal his choice, and we'll see who comes out victorious.
+To play, simply type your choice - rock, paper, or scissors. After that, computer will reveal his choice, and we'll see who comes out victorious.
 
 Ready? What's your move?`);
 console.log('\n');
@@ -20,11 +20,11 @@ console.log('\n');
 const computerTurn= function() {
   let randomNumber=Math.floor(Math.random()*3);
   if(randomNumber===0) {
-    return 'Rock';
+    return 'rock';
   } else if(randomNumber===1) {
-    return 'Paper';
+    return 'paper';
   } else if(randomNumber===2){
-    return 'Scissors';
+    return 'scissors';
   } else {
     return 'Error';
   }
@@ -35,7 +35,7 @@ const computerChoice=computerTurn();
 const result=function(myChoice) {
   if(myChoice===computerChoice) {
     return 'Draw. =|';
-  } else if(myChoice==='Rock' && computerChoice==='Scissors' || myChoice==='Paper' && computerChoice==='Rock' || myChoice==='Scissors' && computerChoice==='Paper') {
+  } else if(myChoice==='rock' && computerChoice==='scissors' || myChoice==='paper' && computerChoice==='rock' || myChoice==='scissors' && computerChoice==='paper') {
     return 'You win! ^_^';
   }
   else {
@@ -49,18 +49,18 @@ const play = function (choice) {
   console.log(`The result is ${result(choice)}`);
 }
 
-play('Paper');
+play('paper');
 
 */
 
 const computerTurn= () => {
   let randomNumber=Math.floor(Math.random()*3);
   if(randomNumber===0) {
-    return 'Rock';
+    return 'rock';
   } else if(randomNumber===1) {
-    return 'Paper';
+    return 'paper';
   } else if(randomNumber===2){
-    return 'Scissors';
+    return 'scissors';
   } else {
     return 'Error';
   }
@@ -71,15 +71,20 @@ const computerChoice=computerTurn();
 const result= myChoice => {
   if(myChoice===computerChoice) {
     return 'Draw. =|';
-  } else if(myChoice==='Rock' && computerChoice==='Scissors' || myChoice==='Paper' && computerChoice==='Rock' || myChoice==='Scissors' && computerChoice==='Paper') {
+  } else if(myChoice==='rock' && computerChoice==='scissors' || myChoice==='paper' && computerChoice==='rock' || myChoice==='scissors' && computerChoice==='paper') {
     return 'You win! ^_^';
+  } else if(myChoice==='rock' && computerChoice==='paper' || myChoice==='paper' && computerChoice==='scissors' || myChoice==='scissors' && computerChoice==='rock') {
+    return 'You lose. =('
+  } else if(myChoice==='bomb') {
+    return 'You win! ^_^ But you know it\'s not fair. So, you didn\'t xD'
   }
   else {
-    return 'You lose. =('
+    return 'Error. You should input the correct data.'
   }
 }
 
 const play = choice => {
+  choice=choice.toLowerCase();
   console.log(`I picked ${choice}.`);
   console.log(`The computer's choice is the ${computerChoice}.`);
   console.log(`The result is ${result(choice)}`);
