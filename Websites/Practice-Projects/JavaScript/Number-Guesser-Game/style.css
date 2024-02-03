@@ -254,19 +254,27 @@ footer {
 .backbutton {
   min-width: 140px;
 }
+
 .backbutton:hover {
   text-decoration: underline;
 }
 
 .backbutton a {
-text-decoration: none;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 1300px) {
 
+  #win,
+  #lose {
+    width: 90%;
+  }
+
   #win h2,
   #lose h2 {
-    font-size: 5rem;
+    margin: 15% auto 0;
+    min-width: 90%;
+    font-size: 7rem;
   }
 }
 
@@ -276,29 +284,41 @@ text-decoration: none;
     min-width: 45%;
     height: 328px;
     padding: 5%;
-}
-.guessing-area {
-  margin: 5%;
-  gap: 5%;
-}
-#guess {
-  padding: 5%;
-  width: 90%;
-}
-footer div{
-  padding: 1%;
-  text-align: center;
-}
+  }
+
+  .guessing-area {
+    margin: 5%;
+    gap: 5%;
+  }
+
+  #guess {
+    padding: 5%;
+    width: 90%;
+  }
+
+  footer div {
+    padding: 1%;
+    text-align: center;
+  }
 
 }
 
 @media only screen and (max-width: 500px) {
 
-  .instructions{
+  .instructions {
     flex-direction: column;
   }
+
   .instruction {
     width: 100%;
     padding: 0.1%;
   }
+
+  #win h2,
+  #lose h2 {
+    min-width: 100%;
+    font-size: 5.5rem;
+    margin: 35% auto 0;
+  }
+
 }
