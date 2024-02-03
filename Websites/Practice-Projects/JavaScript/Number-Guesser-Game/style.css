@@ -251,6 +251,9 @@ footer {
   padding: 0.2% 2%;
 }
 
+.backbutton {
+  min-width: 140px;
+}
 .backbutton:hover {
   text-decoration: underline;
 }
@@ -264,5 +267,38 @@ text-decoration: none;
   #win h2,
   #lose h2 {
     font-size: 5rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+
+  .guess {
+    min-width: 45%;
+    height: 328px;
+    padding: 5%;
+}
+.guessing-area {
+  margin: 5%;
+  gap: 5%;
+}
+#guess {
+  padding: 5%;
+  width: 90%;
+}
+footer div{
+  padding: 1%;
+  text-align: center;
+}
+
+}
+
+@media only screen and (max-width: 450px) {
+
+  .instructions{
+    flex-direction: column;
+  }
+  .instruction {
+    width: 100%;
+    padding: 0.1%;
   }
 }

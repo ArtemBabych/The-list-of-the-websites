@@ -1,9 +1,21 @@
-<!doctype html>
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+    <script async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PX022N48H1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PX022N48H1');
+        </script>
     <title>Number Guesser</title>
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700"
+      rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
@@ -11,21 +23,21 @@
       <header>
         <h1>Number Guesser!</h1>
       </header>
-      
+
       <div class="rounds">
         <p class="round-label">Round <span id="round-number">1</span></p>
-        <p class="guess-label">Target Number: <span id="target-number">?</span></p>
+        <p class="guess-label">Target Number: <span
+            id="target-number">?</span></p>
       </div>
 
       <div class="guessing-area">
         <div id="win">
-          <h2 >You've won!<span id="final-score-w">1</span></h2>
+          <h2>You've won!<span id="final-score-w">1</span></h2>
         </div>
         <div id="lose">
-          <h2 >You've lost.<span id="final-score-l">1</span></h2>
+          <h2>You've lost.<span id="final-score-l">1</span></h2>
         </div>
-        
-        
+
         <div class="guess computer-guess">
           <div class="guess-title">
             <p class="guess-label">Computer</p>
@@ -41,7 +53,8 @@
           </div>
           <input type="number" id="human-guess" min="0" max="9" value="0">
           <div class="number-controls">
-            <button class="number-control left" id="subtract" disabled>-</button>
+            <button class="number-control left" id="subtract"
+              disabled>-</button>
             <button class="number-control right" id="add">+</button>
           </div>
           <button class="button" id="guess">Make a Guess</button>
@@ -53,7 +66,7 @@
       </div>
 
     </div>
-    
+
     <div class="instructions">
       <div class="instruction">
         <h3>Hint 1</h3>
@@ -61,7 +74,8 @@
       </div>
       <div class="instruction">
         <h3>Hint 2</h3>
-        <p>Click "Make a Guess" to submit your guess and see who won the round.</p>
+        <p>Click "Make a Guess" to submit your guess and see who won the
+          round.</p>
       </div>
       <div class="instruction">
         <h3>Hint 3</h3>
@@ -74,11 +88,12 @@
     </div>
     <footer>
       <div>
-        <p>You can also browse other websites if you'd like. To do so, simply click the button on the right.</p>
+        <p>You can also browse other websites if you'd like. To do so, simply
+          click the link on the right.</p>
       </div>
       <div class="backbutton">
         <a href="../../../../index">Back to the list</a>
-    </div>
+      </div>
     </footer>
 
     <script src="./script.js"></script>
