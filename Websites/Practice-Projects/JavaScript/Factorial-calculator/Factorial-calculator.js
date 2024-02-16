@@ -3,6 +3,8 @@ function factorial(number) {
     let result = number;
     if (number === 0 || number === 1) {
         return 1;
+    } else if( number<0) {
+        return `The number must be 0 or positive.`
     } else {
         do {
             result *= i;
